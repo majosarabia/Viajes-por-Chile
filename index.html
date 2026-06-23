@@ -21,7 +21,7 @@
     <div><!--Barra Navegación de Bootstrap-->
       <nav class="navbar fixed-top navbar-expand-lg bg-body-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand">
+          <a class="navbar-brand text-light">
             <img src="assets\img\viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Viajes Chile
           </a>
@@ -31,10 +31,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#">Inicio</a>
-              <a class="nav-link" href="#">Quienes somos</a>
-              <a class="nav-link" href="#">Destacados</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link text-light" href="#">Inicio</a>
+              <a class="nav-link text-light" href="#">Quienes somos</a>
+              <a class="nav-link text-light" href="#">Destacados</a>
+              <a class="nav-link text-light" href="#">Contacto</a>
             </div>
           </div>
         </div>
@@ -169,31 +169,45 @@
 
     <div class="bg-dark"><!--Contacto-->
 
-                  <div class="container col-10 py-5 text-light">
-                <h1 class="fw-bold text-center">Contacto</h1>
-                <form>
-                    <div class="mt-5 mb-3">
-                        <label for="floatingInput">Nombre</label>
-                        <input type="name" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="floatingInput">Asunto</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="floatingTextarea">Mensaje</label>
-                        <input type="text" class="form-control" style="height: 100px;">
-                    </div>
-                    <div class="my-4">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
-            </div>
+      <div class="container col-10 py-5 text-light">
+        <h1 class="fw-bold text-center">Contacto</h1>
+        <form>
+          <div class="mt-5 mb-3">
+            <label for="floatingInput">Nombre</label>
+            <input type="name" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="floatingInput">Asunto</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="floatingTextarea">Mensaje</label>
+            <input type="text" class="form-control" style="height: 100px;">
+          </div>
+          <div class="my-4">
+            <button type="submit" class="btn btn-info text-light">Enviar</button>
+          </div>
+        </form>
+      </div>
 
     </div><!--Contacto-->
 
-    <footer>
+    <footer class="bg-info">
+      <div class="container row pt-3 pb-2 text-light">
+        <div class="col-2"></div>
+        <div class="col-5">
+          <h3>VIAJES CHILE</h3>
+        </div>
+        <div class="col-5">
+          <h3 class="text-end">
+              <i class="fa-brands fa-square-github"></i>
+              <i class="fa-brands fa-square-linkedin"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+          </h3>
+        </div>
 
+      </div>
     </footer>
 
   </div><!--Mi Body-->
