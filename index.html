@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a2176c53a6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets\css\style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div> <!--Mi body-->
+    <div><!--Barra Navegación de Bootstrap-->
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="assets\img\viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Viajes Chile
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#">Quienes somos</a>
+              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div><!--Barra Navegación-->
+
+    <div><!--Carrusel de Bootstrap-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets\img\carousel1.jpg" class="d-block w-100" alt="Alpacas">
+          </div>
+          <div class="carousel-item">
+            <img src="assets\img\carousel2.jpg" class="d-block w-100" alt="Rapa-Nui">
+          </div>
+          <div class="carousel-item">
+            <img src="assets\img\carousel3.jpg" class="d-block w-100" alt="Pinguino">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div><!--Carrusel-->
+
+    <div class="bg-dark"><!--Quienes somos Bootstap:3 cards y oculto en móviles-->
+    <section class="container d-none d-md-block">
+      <div><h2 class="text-center text-light py-5">¿QUIENES SOMOS?</h2></div>
+      <div class="row">
+        <div class="card col-md-4 bg-dark text-light">
+          <div class="card-body">
+            <h5 class="card-title bg-info text-center"><i class="fa-solid fa-plane"></i></h5>
+            <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+              in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+              consequat sed sed ante. <br> Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
+              risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+              id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+          </div>
+        </div>
+
+        <div class="card col-md-4 bg-dark text-light">
+          <div class="card-body">
+            <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+              in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+              consequat sed sed ante. <br>Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
+              risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+              id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+            <h5 class="card-title bg-info text-center"><i class="fa-solid fa-mountain"></i></h5>
+          </div>
+        </div>
+
+        <div class="card col-md-4 bg-dark text-light">
+          <div class="card-body">
+            <h5 class="card-title bg-info text-center"><i class="fa-solid fa-route"></i></h5>
+            <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+              in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+              consequat sed sed ante. <br>Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
+              risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+              id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+          </div>
+        </div>
+      </div>
+
+</section>
+    </div><!--Quienes somos-->
+
+    <div><!--Destacados-->
+
+    </div><!--Destacados-->
+
+    <div><!--Contacto-->
+
+    </div><!--Contacto-->
+
+    <footer>
+
+    </footer>
+
+  </div><!--Mi Body-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

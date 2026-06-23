@@ -1,0 +1,13 @@
+body {
+    font-family: "Raleway";
+}
+
+.card {
+    border: none;
+}
+
+.letrachica {
+    /*se decidió poner esta clase porque al utilizar las propiedades de bootstrap 
+    como <small> la letra quedaba más grande que la imagen referencial*/
+    font-size: 12px;
+}
