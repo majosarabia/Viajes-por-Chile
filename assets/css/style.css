@@ -11,3 +11,10 @@ body {
     como <small> la letra quedaba más grande que la imagen referencial*/
     font-size: 12px;
 }
+.cards-deck{
+    display: inline-flex;
+    justify-content: center;
+}
+.card-top-img{
+    
+}
