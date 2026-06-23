@@ -1,9 +1,11 @@
 body {
     font-family: "Raleway";
+    background-color: black;
 }
 
 .card {
     border: none;
+    background-color: black;
 }
 
 .letrachica {
@@ -18,3 +20,7 @@ body {
 .card-img-top {
     max-height: 180px;
 }   
+.icon-section a{
+    text-decoration: none;
+    color: white;
+}
