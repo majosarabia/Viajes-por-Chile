@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" type="image/svg" href="./assets/img/viajes.svg">
+  <link rel="shortcut icon" type="image/svg" href="./assets/img/viajes.svg">
   <script src="https://kit.fontawesome.com/a2176c53a6.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +19,22 @@
 
 <body>
   <div> <!--Mi body-->
-    <div><!--Barra Navegación de Bootstrap-->
+    <section><!--Barra Navegación de Bootstrap-->
       <nav class="navbar fixed-top navbar-expand-lg bg-body-transparent">
         <div class="container-fluid">
           <a class="navbar-brand text-light">
             <img src="assets\img\viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Viajes Chile
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border-light navbar-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ms-auto">
               <a class="nav-link text-light" href="#Inicio">Inicio</a>
-              <a class="nav-link text-light" href="#Quienes-Somos">Quienes somos</a>
+              <a class="nav-link text-light d-none d-md-block" href="#Quienes-Somos">Quienes somos</a>
               <a class="nav-link text-light" href="#Destacados">Destacados</a>
               <a class="nav-link text-light" href="#Contacto">Contacto</a>
             </div>
@@ -41,9 +42,9 @@
         </div>
       </nav>
 
-    </div><!--Barra Navegación-->
+    </section><!--Barra Navegación-->
 
-    <div id="Inicio"><!--Carrusel de Bootstrap-->
+    <header id="Inicio"><!--Carrusel de Bootstrap-->
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -66,110 +67,108 @@
         </button>
       </div>
 
-    </div><!--Carrusel-->
+    </header><!--Carrusel-->
 
-    <div id="Quienes-Somos"><!--Quienes somos Bootstrap: 3 cards y oculto en móviles-->
-      <section class="container d-none d-md-block">
+    <section id="Quienes-Somos"><!--Quienes somos Bootstrap: 3 cards y oculto en móviles-->
+      <div class="container d-none d-md-block">
         <div>
           <h2 class="text-center text-light py-5">¿QUIENES SOMOS?</h2>
         </div>
         <div class="row">
           <div class="card col-md-4 text-light">
             <div class="card-body">
-              <h5 class="card-title bg-info text-center"><i class="fa-solid fa-plane"></i></h5>
+              <h5 class="card-title bg-info text-center py-1"><i class="fa-solid fa-plane"></i></h5>
               <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante
-                nulla. Donec
-                in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+                nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
                 consequat sed sed ante. <br> Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam
-                eu
-                risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+                eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
                 id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
                 malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id
-                interdum
-                nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+                interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
             </div>
           </div>
 
           <div class="card col-md-4 text-light">
             <div class="card-body">
               <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante
-                nulla. Donec
-                in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+                nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
                 consequat sed sed ante. <br>Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam
-                eu
-                risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+                eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
                 id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
                 malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id
-                interdum
-                nibh luctus. Nam ac orci id neque posuere aliquam.</p>
-              <h5 class="card-title bg-info text-center"><i class="fa-solid fa-mountain"></i></h5>
+                interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+              <h5 class="card-title bg-info text-center py-1"><i class="fa-solid fa-mountain"></i></h5>
             </div>
           </div>
 
           <div class="card col-md-4 text-light">
             <div class="card-body">
-              <h5 class="card-title bg-info text-center"><i class="fa-solid fa-route"></i></h5>
+              <h5 class="card-title bg-info text-center py-1"><i class="fa-solid fa-route"></i></h5>
               <p class="card-text letrachica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante
-                nulla. Donec
-                in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
+                nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod
                 consequat sed sed ante. <br>Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam
-                eu
-                risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
+                eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex,
                 id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
                 malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id
-                interdum
-                nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+                interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
             </div>
           </div>
         </div>
 
-      </section>
-    </div><!--Quienes somos-->
+      </div>
+    </section><!--Quienes somos-->
 
-    <div id="Destacados"><!--Destacados: 4 cards de bootstrap utilizando cards-deck-->
+    <section id="Destacados"><!--Destacados: 4 cards de bootstrap-->
       <div class="container">
         <div>
           <h2 class="text-center text-light py-5">DESTACADOS</h2>
         </div>
-        <div class="cards-deck">
-          <div class="card col-xs-12 col-md-3 bg-info text-light m-2 border border-white">
-            <img src="assets\img\card1.jpg" class="card-img-top" alt="card1">
-            <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua</p>
+        <div class="row g-3">
+          <div class="col-xs-12 col-md-3">
+            <div class="card h-100 bg-info text-light border border-white">
+              <img src="assets\img\card1.jpg" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua</p>
+              </div>
             </div>
           </div>
-          <div class="card col-xs-12 col-md-3 bg-info text-light m-2 border border-white">
-            <img src="assets\img\card2.jpg" class="card-img-top" alt="card2">
-            <div class="card-body">
-              <h5 class="card-title">Consectetur adipisicing elit</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="col-xs-12 col-md-3">
+            <div class="card h-100 bg-info text-light border border-white">
+              <img src="assets\img\card2.jpg" class="card-img-top" alt="card2">
+              <div class="card-body">
+                <h5 class="card-title">Consectetur adipisicing elit</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-          <div class="card col-xs-12 col-md-3 bg-info text-light m-2 border border-white">
-            <img src="assets\img\card3.jpg" class="card-img-top" alt="card3">
-            <div class="card-body">
-              <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="col-xs-12 col-md-3">
+            <div class="card h-100 bg-info text-light border border-white">
+              <img src="assets\img\card3.jpg" class="card-img-top" alt="card3">
+              <div class="card-body">
+                <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-          <div class="card col-xs-12 col-md-3 bg-info text-light m-2 border border-white">
-            <img src="assets\img\card4.jpg" class="card-img-top" alt="card4">
-            <div class="card-body">
-              <h5 class="card-title">Ut enim ad minim veniam</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua</p>
+          <div class="col-xs-12 col-md-3">
+            <div class="card h-100 bg-info text-light border border-white">
+              <img src="assets\img\card4.jpg" class="card-img-top" alt="card4">
+              <div class="card-body">
+                <h5 class="card-title">Ut enim ad minim veniam</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!--Destacados-->
+    </section><!--Destacados-->
 
-    <div id="Contacto"><!--Contacto form de bootstrap-->
-
+    <section id="Contacto"><!--Contacto form de bootstrap-->
       <div class="container col-10 py-5 text-light">
         <h1 class="fw-bold text-center">Contacto</h1>
         <form>
@@ -186,37 +185,44 @@
             <input type="text" class="form-control" style="height: 100px;">
           </div>
           <div class="my-4">
-            <button type="submit" class="btn btn-info text-light">Enviar</button>
+            <button type="button" class="btn btn-info text-light" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-title="Presiona para enviar mensaje" id="EnviarMensaje">Enviar</button>
           </div>
         </form>
       </div>
-
-    </div><!--Contacto-->
+    </section><!--Contacto-->
 
     <footer class="bg-info">
-      <div class="container row pt-3 pb-2 text-light">
-        <div class="col-2"></div>
-        <div class="col-5">
-          <h3>VIAJES CHILE</h3>
-        </div>
-        <div class="col-5">
-          <section class="icon-section">
-          <h3 class="text-end">
-            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-          </h3>
-          </section>
+      <div class="container pt-3 pb-2 text-light">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3>VIAJES CHILE</h3>
+          </div>
+          <div class="col">
+            <section class="icon-section">
+              <h3 class="text-end">
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+              </h3>
+            </section>
+          </div>
         </div>
 
       </div>
     </footer>
 
   </div><!--Mi Body-->
+
+
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="assets\js\scripts.js"></script>
 </body>
 
 </html>

@@ -1,24 +1,25 @@
 body {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     background-color: black;
 }
 
-.card {
-    border: none;
+.card { 
+/*esto se utilizó para las 3 cards con favicons de la ya que el color de bootstrap
+dg-dark es más claro que el color black (que considero se parece más a la imagen 
+de la guía)*/
     background-color: black;
 }
 
 .letrachica {
-    /*se decidió poner esta clase porque al utilizar las propiedades de bootstrap 
-    como <small> la letra quedaba más grande que la imagen referencial*/
+/*se decidió poner esta clase porque al utilizar las propiedades de bootstrap 
+como <small> la letra quedaba más grande que la imagen referencial*/
     font-size: 12px;
 }
-.cards-deck{
-    display: inline-flex;
-    justify-content: center;
-}
-.card-img-top {
-    max-height: 180px;
+
+.card-img-top { 
+/*esto se utilizó para que las imagenes de las 3 cards de la sección "destacados"
+quedaran del mismo tamaño*/
+    max-height: 150px;
 }   
 .icon-section a{
     text-decoration: none;
